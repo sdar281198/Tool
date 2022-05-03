@@ -1,0 +1,439 @@
+/**Menu hamburguesa**/
+:root{
+  --main-font:sans-serif;
+  --font-size:16px;
+  --main-color:#818181;
+  --second-color:#222;
+  --main-modal-color:rgba(247,222,30,0.85);
+  --second-modal-color:rgba(34,34,34,0.85);
+  --container-width:1200px;
+}
+html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+*,
+*:before,
+*:after{
+  box-sizing:inherit;
+}
+body{
+  margin: 0;
+  overflow-x: hidden;
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+/****/
+.header{
+  position: sticky;
+  top: 0;
+  padding: 1rem;
+  background-color: var(--main-color);
+  color: var(--second-color);
+}
+.header h1{
+  margin: 0 auto;
+  text-align: center;
+}
+.section{
+  padding: 2rem;
+  padding-top: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: var(--container-width);
+  min-height: 100vh;
+  text-align:center;
+}
+.panel{
+  position: fixed;
+  z-index: 998;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--second-modal-color);
+  transition:transform 0.3s ease;
+  width: 100%;
+  transform: translate(0,-100%);
+  overflow: hidden;
+}
+.panel.is-active{
+  transform: translate(0,0);
+}
+.panel-btn{
+  position: fixed;
+  z-index: 999;
+  bottom: 1vh;
+  left: 1vw;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  padding: 0;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  background-color: var(--main-color)!important;
+}
+.menuh{
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+.menuh a{
+  padding: 2rem;
+  width: inherit;
+  display: block;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color:var(--main-color);
+  transition: all 0.3s ease;
+}
+.menuh a:hover{
+  font-weight: bold;
+  color:white;
+  background-color:#818181;
+}
+.panel-btn:focus{
+  outline: none;
+}
+
+/**Fin de menu hamburguesa**/
+#servicios{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.servicio figcaption{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+}
+.servicio{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.servicio img{
+  height: 300px;
+}
+.servicio figcaption img{
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.servicio{
+  height: 610px;
+  width: 100%;
+  margin: 0px auto;
+  background-color: white;
+  color: black;
+  text-align: center;
+  line-height: 610px;
+  font-size: 60px;
+  position: relative;
+}
+.servicio1{
+  background-color:#007caa;
+}
+.servicio1 figcaption img{
+  width: 100%;
+}
+.servicio2{
+  background-color:#4bacbf;
+}
+.servicio3{
+  background-color: #54bdbf ;
+}
+.servicio4{
+  background-color:#93b8b9;
+}
+.servicio5{
+  background-color:#ec512f;
+}
+.servicio6{
+  background-color:#ee6f32;
+}
+.servicio7{
+  background-color:#f29a50;
+}
+.servicio8{
+  background-color:#f6c063;
+}
+.servicio figcaption input[type="button"]{
+  width: 120px;
+  height: 50px;
+  position: absolute;
+  font-size: 17px;
+  cursor: pointer;
+  border:1px solid white;
+  -webkit-transition: all 500ms;
+  -o-transition: all 500ms;
+  transition: all 500ms;
+  text-transform: uppercase;
+  color: white;
+  opacity:1;
+}
+.servicio1 figcaption input[type="button"]{
+  bottom: 10px;
+  right: 412px;
+  background: #007caa;
+}
+.servicio2 figcaption input[type="button"]{
+  bottom: 10px;
+  left: 383px;
+  background: #00aec1;
+}
+.servicio3 figcaption input[type="button"]{
+  bottom: 10px;
+  right: 438px;
+  background: #00bec0;
+}
+.servicio4 figcaption input[type="button"]{
+  bottom: 10px;
+  left: 185px;
+  background: #92b8b9;
+}
+.servicio5 figcaption input[type="button"]{
+  bottom: 10px;
+  left: 185px;
+  background: #ff5029;
+}
+.servicio6 figcaption input[type="button"]{
+  bottom: 10px;
+  left: 185px;
+  background: #ff7029;
+}
+.servicio7 figcaption input[type="button"]{
+  bottom: 10px;
+  right: 600px;
+  background: #ff9b49;
+}
+.servicio8 figcaption input[type="button"]{
+  bottom: 10px;
+  left: 185px;
+  background: #ffc15c;
+}
+@media (max-width:1343px) {
+  .servicio1 figcaption input[type="button"]{
+    right: 325px;
+  }
+  .servicio2 figcaption input[type="button"]{
+    left: 348px;
+  }
+  .servicio3 figcaption input[type="button"]{
+    right: 368px;
+  }
+  .servicio7 figcaption input[type="button"]{
+    right: 410px;
+  }
+
+}
+@media (max-width:1100px) {
+  .servicio{
+    height: 391px;
+  }
+  .servicio img{
+    height: 215px;
+  }
+  .servicio1 figcaption input[type="button"]{
+    right: 229px;
+  }
+  .servicio2 figcaption input[type="button"]{
+    left: 210px;
+
+  }
+  .servicio3 figcaption input[type="button"]{
+    right: 250px;
+
+  }
+  .servicio7 figcaption input[type="button"]{
+    right: 290px;
+
+  }
+
+}
+
+@media (max-width:950px) {
+  .servicio1 figcaption input[type="button"]{
+    bottom: 10px;
+    right: 192px;
+  }
+  .servicio2 figcaption input[type="button"]{
+    bottom: 10px;
+    left: 143px;
+    background: #00aec1;
+  }
+  .servicio3 figcaption input[type="button"]{
+    bottom: 10px;
+    right: 192px;
+    background: #00bec0;
+  }
+  .servicio4 figcaption input[type="button"]{
+    bottom: 10px;
+    left: 143px;
+    background: #92b8b9;
+  }
+  .servicio5 figcaption input[type="button"]{
+    bottom: 10px;
+    left: 143px;
+    background: #ff5029;
+  }
+  .servicio6 figcaption input[type="button"]{
+    bottom: 10px;
+    left: 143px;
+    background: #ff7029;
+  }
+  .servicio7 figcaption input[type="button"]{
+    bottom: 10px;
+    right: 192px;
+    background: #ff9b49;
+  }
+  .servicio8 figcaption input[type="button"]{
+    bottom: 10px;
+    left: 143px;
+    background: #ffc15c;
+  }
+
+
+}
+@media (max-width:770px) {
+  .servicio1 figcaption input[type="button"]{
+    right: 130px;
+  }
+  .servicio3 figcaption input[type="button"]{
+    right: 110px;
+  }
+
+}
+  @media (max-width:660px) {
+    .servicio figcaption input[type="button"]{
+      width: 120px!important;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .servicio{
+      width: 100%;
+      height: 288px !important;
+    }
+    .servicio img{
+      height: 213px;
+    }
+    .servicio1 figcaption input[type="button"]{
+      right: 95px;
+    }
+    .servicio2 figcaption input[type="button"]{
+      left: 98px;
+    }
+    .servicio3 figcaption input[type="button"]{
+      right: 150px;
+    }
+    .servicio4 figcaption input[type="button"]{
+      left: 116px;
+    }
+    .servicio5 figcaption input[type="button"]{
+      left: 116px;
+    }
+    .servicio6 figcaption input[type="button"]{
+      left: 117px;
+    }
+    .servicio7 figcaption input[type="button"]{
+      right: 180px;
+    }
+    .servicio8 figcaption input[type="button"]{
+      left: 119px;
+    }
+
+  }
+
+  @media (max-width:590px) {
+    .servicio figcaption input[type="button"]{
+      width: 148px;
+      font-size: 18px;
+    }
+
+  }
+  @media (max-width:465px) {
+    .servicio img{
+      height: 159px;
+    }
+    .servicio1 figcaption input[type="button"]{
+      right: 52px;
+    }
+    .servicio3 figcaption input[type="button"]{
+      right: 52px;
+    }
+    .servicio7 figcaption input[type="button"]{
+      right: 82px;
+    }
+
+
+
+  }
+  @media (max-width:380px) {
+    .servicio{
+      height: 210px!important;
+    }
+    .servicio img{
+      height: 120px;
+    }
+    .networks ul{
+      z-index: 200;
+    }
+    .servicio1 figcaption input[type="button"]{
+      right: 102px;
+    }
+
+    .servicio2 figcaption input[type="button"]{
+      left: 87px;
+    }
+    .servicio3 figcaption input[type="button"]{
+      right: 88px;
+    }
+    .servicio4 figcaption input[type="button"]{
+      left: 54px;
+    }
+    .servicio5 figcaption input[type="button"]{
+      left: 38px;
+    }
+    .servicio6 figcaption input[type="button"]{
+      left: 44px;
+    }
+    .servicio7 figcaption input[type="button"]{
+    right: 134px;
+  }
+    .servicio8 figcaption input[type="button"]{
+      left: 34px;
+    }
+    .servicio figcaption input[type="button"]{
+        height: 20px;
+        width: 66px!important;
+        font-size: 11px;
+    }
+
+
+  }
+  @media (max-width:638px) {
+    .networks ul{
+      z-index: 200!important;
+    }
+
+  }
+input {
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+opacity: 1
+}

@@ -1,0 +1,191 @@
+#formulario{
+  width: 100%;
+  height: auto;
+  background: #808080;
+}
+#formulariofirme{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0px auto;
+}
+#formulariofirme p{
+  font-size: 20px;
+  text-transform: uppercase;
+}
+#formulariofirme input{
+    height:40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+#formulariofirme input:focus{
+  outline: none;
+}
+.containerform{
+  width: 90%;
+  display: flex;
+  padding: 20px;
+  margin: 0px auto;
+}
+.f1{
+  width: 50%;
+
+
+}
+.f1 section{
+  display: flex;
+  flex-direction: column;
+}
+.f1 section textarea{
+  width: 100%;
+}
+.f2{
+  width: 50%;
+}
+.form1{
+  width: 90%;
+  margin: 0 auto;
+  height: auto;
+  background: #808080;
+  color: white;
+  border-radius: 40px;
+
+}
+.form1 h6{
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 62px;
+  padding-top: 49px;
+  text-transform: uppercase;
+
+}
+.form1 section{
+  width: 90%;
+  padding: 20px;
+  margin: 0px auto;
+}
+.form1 section input{
+  width: 100%;
+  height: 40px;
+  margin: 0px auto;
+}
+.form1 section input:focus{
+  outline: none;
+
+}
+.form2{
+  width: 90%;
+  margin: 0 auto;
+  height: 1167px;
+  background: #808080;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+}
+.tool{
+  color: white;
+  text-align: left!important;
+  font-size: 45px!important;
+  text-transform: uppercase;
+
+}
+.frase{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px!important;
+
+}
+.form1 section h1{
+  text-align: left !important;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.boton{
+  background-color: black;
+    width: 100px;
+    height: 48px;
+    margin: 0 auto;
+    margin-top: -50px;
+    color: white;
+    text-align:center;
+    line-height:48px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+.bien{
+  text-align: center;
+}
+.bad{
+  text-align: center;
+}
+.gif img{
+  height: 550px;
+  margin-top:-250px;
+}
+.numeros{
+  font-size: 27px;
+}
+.numeros p{
+  margin-bottom: 20px;
+}
+.first{
+  margin-bottom: -8px!important;
+}
+.numeros i{
+  margin-right: 15px;
+}
+.franjas{
+  display: flex;
+}
+.franja{
+  flex-basis: 0;
+  flex-grow: 1;
+  height: 40px;
+}
+.franja1{
+  background: #007dac;
+}
+.franja2{
+  background: #00b0c3;
+}
+.franja3{
+  background: #00bfc1;
+}
+.franja4{
+  background: #62babd;
+}
+.franja5{
+  background: #ffce8b;
+}
+.franja6{
+  background: #ffc253;
+}
+.franja7{
+  background: #ff9c41;
+}
+.franja8{
+  background: #ff711c;
+}
+.franja9{
+  background: #ff4f21;
+}
+@media (max-width:950px) {
+  .f1{
+    width: 100%;
+  }
+  .f2{
+    width: 100%;
+  }
+
+}
+@media (max-width:830px){
+    .form2{
+        height:885px;
+    }
+    
+}

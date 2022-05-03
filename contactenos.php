@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Contactenos</title>
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/georgia.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/contactenos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <button class="panel-btn hamburger hamburger--vortex" type="button">
+    <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+    </span>
+</button>
+<aside class="panel">
+  <nav class="menuh">
+    <a href="serviciosemp.html">Servicios Empresariales</a>
+    <a href="serviciosd.html">Servicios Domesticos</a>
+    <a href="contactenos.php">Contáctenos</a>
+  </nav>
+</aside>
+  <header id="header">
+      <nav>
+        <ul class="menu menu-main">
+          <li><a href="serviciosemp.html">Servicios Empresariales</a></li>
+          <li><a href="serviciosd.html">Servicios domesticos</a></li>
+          <li><a href="contactenos.php">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="logorob">
+        <a href="index.html"><img src="img/logo.png" alt=""></a>
+
+
+      </div>
+
+      <div class="networks">
+        <ul>
+            <li><a href="https://www.instagram.com/tool.pe/"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.facebook.com/Tool.pe1"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="contactenos.php"><i class="fab fa-whatsapp"></i></a></li>
+          </ul>
+
+      </div>
+  </header>
+  <div class="franjas">
+    <div class="franja franja1"></div>
+    <div class="franja franja2"></div>
+    <div class="franja franja3"></div>
+    <div class="franja franja4"></div>
+    <div class="franja franja5"></div>
+    <div class="franja franja6"></div>
+    <div class="franja franja7"></div>
+    <div class="franja franja8"></div>
+    <div class="franja franja9"></div>
+  </div>
+  <div id="formulario">
+    <div class="containerform">
+
+
+      <div class="f1">
+
+        <div class="form1">
+          <h6>Contacto</h6>
+          <form id="formulariofirme" action="" method="POST">
+              <p>Nombres:</p>
+              <input type="text" name="nombre">
+              <p>Apellidos:</p>
+              <input type="text" name="apellidos">
+              <p>Direccion:</p>
+              <input type="text" name="direccion">
+              <p>Numero:</p>
+              <input type="number" name="numero">
+              <p>Correo:</p>
+              <input type="email" name="correo">
+              <p>Deja tu observacion:</p>
+              <textarea id="" name="texto" rows="5" cols="10"></textarea>
+              <input type="submit" name="registro" value="Enviar Datos">
+
+
+
+          </form>
+          <?php
+          include("registro.php");
+          ?>
+
+
+
+
+
+        </div>
+
+      </div>
+
+
+      <div class="f2">
+
+        <div class="form2">
+          <div class="gif">
+            <img src="img/contacto.jpg" alt="">
+
+          </div>
+          <div class="numeros">
+            <p class="first"><i class="fab fa-whatsapp"></i></i>+51978792807</p><br>
+            <p><i class="fas fa-phone"></i>014214761</p>
+            <p class=""><i class="fas fa-envelope-open-text"></i>contacto@tool.pe</p>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+    </div>
+
+
+
+  </div>
+
+  <footer id="footer">
+    <div class="footf">
+      <div class="foot footl">
+        <img src="img/logo.png" alt="">
+
+      </div>
+      <div class="foot footmenu footnav">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="serviciosemp.html">Servicios Empresariales</a></li>
+          <li><a href="serviciosd.html">Servicios Domesticos</a></li>
+          <li><a href="contactenos.php">Contacto</a></li>
+        </ul>
+
+      </div>
+      <div class="foot foot3">
+        <span class="datos">
+          <p><i class="fab fa-whatsapp"></i>+51978792807</p><br>
+          <p><i class="fas fa-phone"></i>014214761</p>
+          <p class="pa2"><i class="fas fa-envelope-open-text"></i>contacto@tool.pe</p>
+
+        </span>
+
+      </div>
+      <div class="foot foot4">
+        <ul>
+          <li><a href="https://www.instagram.com/tool.pe/"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://www.facebook.com/Tool-Per%C3%BA-101425315181238"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
+        </ul>
+
+
+      </div>
+
+
+
+    </div>
+
+  </footer>
+  <a href="#" id="arriba"><i class="fas fa-chevron-up"></i></a>
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/banner.js"></script>
+<script src="js/index-dom.js" type="module"></script>
+
+</body>
+</html>
